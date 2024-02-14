@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+}
+#nav{
+  height: 75px;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  gap: 25px;
+}
+#nav h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+#nav h4:hover{
+  color: #B95260;
+}
+#nav i:hover{
+  background-color: #B95260;
+}
+#nav i{
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 17px;
+  font-weight: 500;
+}
+#center{
+  width: 100%;
+  padding:  40px 60px;
+  /* background-color: darkturquoise; */
+  display: flex;
+  justify-content: space-between;
+}
+#center span{
+  color: #B95260;
+  font-weight: 600;
+}
+#center h1{
+  width: 45%;
+  font-size: 3vw;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 3.5vw;
+}
+#right{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  padding: 0px 60px;
+  height: 100px;
+}
+#right p{
+  width: 37%;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  padding-top: 3px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 550;
+}
+#center-right{
+  width: 20%;
+  /* background-color: yellowgreen; */
+}
+.links{
+  padding: 9px 0px;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.links:hover{
+  background-color: rgba(118, 114, 114, 0.061);
+}
+.links a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+}
+.links i{
+  font-weight: 100;
+  opacity: 0;
+}
+.links:hover i{
+  opacity: 1;
+}
+
+#bottom{
+  width: 92%;
+  height: 33%;
+  margin-top: 32px;
+  margin-left: 58px;
+  background-color: rebeccapurple;
+  background-image: url(https://i.pinimg.com/564x/e7/a2/c5/e7a2c51916ed66e684e6e71cd83636b8.jpg);
+  background-size: cover;
+  background-position: 0 60%;
+}
+@media (max-width:600px) {
+  #nav{
+    height: 50px;
+    /* background-color: aquamarine; */
+    padding: 0 20px;
+    gap: 18px;
+  }
+  #nav h4{
+    font-size: 12px;
+    /* display: none; */
+  }
+  #nav i{
+    padding: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    /* display: none; */
+  }
+  #center{
+    width: 100%;
+    padding:  35px 30px;
+    padding-bottom: 30px;
+    /* background-color: darkturquoise; */
+    display: flex;
+    justify-content: space-between;
+  }
+  #center span{
+    color: #B95260;
+    font-weight: 600;
+  }
+  #center h1{
+    width: 70%;
+    font-size: 4.5vw;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 4.7vw;
+  }
+  #right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding: 0px 30px;
+    height: 100px;
+  }
+  #right p{
+    width:95%;
+    font-size: 2.8vw;
+    margin-bottom: 30px;
+    line-height: 2.9vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  #center-right{
+    width: 95%;
+    margin-bottom: 4px;
+    /* background-color: yellowgreen; */
+  }
+  .links{
+    padding: 7px 0px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links a{
+    font-size: 11px;
+    font-weight: 550;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .links i{
+    font-weight: 100;
+    opacity: 1;
+    font-size: 13px;
+    font-weight: 550;
+  }
+  #bottom{
+    width: 90%;
+    height: 43%;
+    margin-top: 100px;
+    margin-left: 17px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: top;
+  }
+}
